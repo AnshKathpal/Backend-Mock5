@@ -29,7 +29,7 @@ userRoute.post("/signup", async(req,res) => {
         }
 
     }catch(err){
-        res.status(400).json({err : err.message})
+        res.status(400).end({err : err.message})
     }
 
 })
@@ -56,7 +56,7 @@ userRoute.post("/login",async(req,res)=>{
         }
     }
     catch(err){
-        res.status(400).json({err:err.message})
+        res.status(400).end({err:err.message})
     }
 })
 
